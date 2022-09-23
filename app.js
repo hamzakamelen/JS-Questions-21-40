@@ -265,3 +265,285 @@
 // document.write("Late Payment Surcharge: " + late_charges + "<br />")
 // var after = payableAmount + late_charges
 // document.write("Gross Amount Payable (after Due Date): " + after + "<br />")
+
+// CHARTER NO 35,36,37,38
+// Question no 01:
+// function currentDate() {
+//     var newDate = new Date()
+//     alert(newDate)
+// }
+// currentDate()
+
+// question no 02:
+// function Username(firstname,lastname){
+//     alert("Congratulations  " + firstname,lastname)
+// }
+// var first = prompt("firstName")
+// var second = prompt("lastname")
+// Username(first+" "+second)
+
+// question no 03:
+// function thirdquestion() {
+//     var num1 = +prompt("Enter First Number")
+//     var num2 = +prompt("Enter second Number")
+//     var final = num1 + num2
+//     return final
+// }
+// var value = thirdquestion()
+// alert("Final Value " + value)
+
+// question no 04:
+// function calculator(num1,sign,num2) {
+//     if(sign =="+"){
+//         return num1 + num2
+//     }else if(sign =="*"){
+//         return num1 * num2
+//     }else if(sign =="/"){
+//         return num1 / num2
+//     } else if(sign =="-"){
+//         return num1 - num2
+//     }
+// }
+// var num1 = +prompt("NUMBER 1")
+// var sign = prompt("sign")
+// var num2 = +prompt("NUMBER 2")
+// var calc = calculator(num1,sign,num2) 
+// document.write(calc)
+
+// question no 05:
+// function argu(numb) {
+//     var square = numb * numb
+//     return square
+    
+// }
+// var result = argu(16)
+// document.write(result)
+
+// question no 06:
+// function factorial(numb) {
+//     if(numb < 0){
+//         return -1
+//     }
+//     else if(numb == 0 ){
+//         return 1
+//     }
+//     else{
+//         return (numb * factorial( numb - 1 ))
+//     }
+// }
+// var result = factorial(5)
+// document.write(result)
+
+// question no 07:
+// function count() {
+//     var countStart = +prompt("Enter Counting starting number")
+//     var countEnd = +prompt("Enter Counting ending number")
+//     for(var i= countStart; i <= countEnd;i++){
+//         document.write(i + "<br />")
+//     }
+// }
+// count()
+
+// question no 08
+// function calhypotenous(){
+//     function calculatesquare(){
+//         var base = +prompt("Enter Base")
+//         var perpendicular = +prompt("Enter Perp")
+//         return base,perpendicular
+//     }
+//     return calculatesquare;
+// }
+// calhypotenous()
+// NOT WORKING
+
+// question 09:
+// function areaoftriangle(width,height){
+//     var area = width * height
+//     document.write(area)
+// }
+// var wid = 20
+// areaoftriangle(21,wid)
+
+// QUESTION NO 10
+// ..........................
+// var palinword = prompt("Enter Word")
+// function palindrome(){
+//     var check = ""
+
+//     for(i = palinword.length-1 ; i >=0 ; i--){
+//         check += palinword[i]
+//     }
+
+//     if(check === palinword){
+//         alert("This Word is Palindrome")
+//     }else {
+//         alert("This Word is not Palindrome")
+//     }
+// }
+// palindrome()
+
+// Q11
+
+// function uppercase(str){
+//     var array1 = str.split(" ")
+//     var newarray = []
+
+//     for(var x = 0 ; x < array1.length ; x++){
+//         newarray.push(array1[x].charAt(0).toUpperCase() + array1[x].slice(1))
+//     }
+//     return newarray.join(" ")
+// }
+// var result = uppercase("the quick brown fox")
+// document.write(result)
+
+// Q12
+
+// function longestword(str){
+//     var arr = str.split(" ")
+//     var lgword = ""
+
+//     for( i = 0 ; i < arr.length ; i++){
+//         var ind = arr[i]
+
+//         if(ind.length > lgword.length){ 
+//            lgword = ind 
+//         }
+
+//     }
+//     return lgword
+
+// }
+// var rs = longestword("Web Developent Tutorial")
+// console.log(rs)
+
+// Q13
+
+// function counter(string , letter){
+//     var count = 0;
+//     for(i = 0 ; i < string.length ; i++){
+//         if(string.charAt(i) === letter){
+//             count++
+//         }
+//     }
+//     return count;
+// }
+// var ct = counter("hamza" , "a")
+// console.log(ct)
+
+// Q14
+
+// function circumference(){
+//     var radius = 20
+//     var pie = 3.142
+//     var circle = 2 * pie * radius
+//     document.write(circle + "<br />")
+// }
+// circumference()
+
+// function area(){
+//     var radius = 20
+//     var pie = 3.142
+//     var circle = pie * radius**2
+//     document.write(circle)
+// }
+// area()
+
+
+// Chapter 39,40
+
+// Q1 
+
+// function power(a,b){
+//     var c = a*a
+//     var d = b*b
+//     console.log(c,d)
+// }
+// power(2,3)
+
+// Q2
+
+// var year = +prompt("Enter Any Year")
+// switch (year){
+    
+//     case 2012:
+//     alert("Its Leap Year")
+//     break;
+
+//     case 2016:
+//     alert("Its Leap Year")
+//     break;
+
+//     case 2020:
+//     alert("Its Leap Year")
+//     break;
+
+//     default:
+//         alert("Its Not Leap Year")
+// }
+
+// Q3
+
+// function calculation(a,b,c){
+//     var s = ( a + b + c ) / 2
+
+//     function area(){
+//         var area = s*(s - a)(s - b)(s - c)
+//         var root = Math.sqrt(area)
+//         document.write(root)
+//     }
+//     area()
+// }
+// calculation(2,3,4)
+
+// Q4
+
+// function subject(Math,English,Urdu){
+    
+//     function Avg(){
+//         var av = (Math + English + Urdu) / 2
+//         return av
+//     }
+//     var average = Avg()
+    
+//     function Perc(){
+//         var totalMarks = 300
+//         var obtainedMarks = Math + English + Urdu
+//         var per = (obtainedMarks / totalMarks)*100
+//         return per   
+//     }
+//     var Percentage = Perc()
+//     return average,Percentage
+// }
+
+// var a = +prompt("Enter Math Mark")
+// var b = +prompt("Enter English Mark")
+// var c = +prompt("Enter Urdu Mark")
+// console.log(subject(a,b,c))
+
+// Q5
+
+// function index(string){
+//     var ind = string.indexOf("d")
+//     console.log(ind)
+// }
+// index("adnan")
+
+// Q6
+
+// function check (){
+//     var res = ""
+//     var str = "gjgmaabbbc"
+
+//     for(i = 0 ; i < str.length ; i++){
+//         if("aeiouAEIOU".match(str[i]) === null ){
+            
+//         }else {
+//             res += str[i]
+//         }
+//         return res
+//     }
+// }
+// var chk = check()
+// console.log(chk)
+
+// chapter 21 to 40 completed
